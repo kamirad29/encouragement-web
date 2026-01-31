@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>กำลังใจสำหรับพรรครุ่งอรุณ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 380px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #ff6f91;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        button {
+            background: #ff6f91;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff4f7b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>💖 กำลังใจส่งถึง</h1>
+    <div class="name">พรรครุ่งอรุณ 🌅</div>
+
+    <p id="message">
+        ไม่ว่าจะเจออะไร ขอให้เชื่อว่าความพยายามของคุณมีความหมายเสมอ
+    </p>
+
+    <button onclick="changeMessage()">ขอกำลังใจอีก 💌</button>
+</div>
+
+<script>
+    const messages = [
+        "พรรครุ่งอรุณเข้มแข็งกว่าที่คิด และจะผ่านวันนี้ไปได้แน่นอน 🌈",
+        "ทุกการเริ่มต้นใหม่ คือความหวังที่สวยงาม 🌅",
+        "อย่าลืมว่ามีคนจำนวนมากเอาใจช่วยพรรครุ่งอรุณอยู่ 🤍",
+        "แม้ทางจะยาก แต่แสงอรุณย่อมมาถึงเสมอ ✨",
+        "พักได้ เหนื่อยได้ แต่ความหวังอย่าหายไปนะ 💪"
+    ];
+
+    function changeMessage() {
+        const random = Math.floor(Math.random() * messages.length);
+        document.getElementById("message").innerText = messages[random];
+    }
+</script>
+
+</body>
+</html>
